@@ -39,7 +39,7 @@
         font-size: 14px;
         font-weight: 500;
         color: #252B42;
-        font-family: Montserrat, sans-serif;
+        font-family: DM Sans, sans-serif;
     }
 
     /* ************************ */
@@ -50,7 +50,7 @@
     }
 
     ._container {
-        max-width: 1046px;
+        max-width: 1033px;
         padding: 0 15px;
         margin: 0px auto;
         box-sizing: content-box;
