@@ -201,7 +201,9 @@
 //  totalSpent += payment;
 // console.log(`Your total spent = ${totalSpent}`);
 
-const btnAdd = document.querySelector('button');
-btnAdd.addEventListener('click', () => {
-  console.log('click hehehe');
-});
+// const btnAdd = document.querySelector('button');
+// btnAdd.addEventListener('click', () => {
+//   console.log('click hehehe');
+// });
+
+
