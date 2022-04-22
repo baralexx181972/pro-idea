@@ -257,17 +257,65 @@
 // }
 
 // console.log(result);
-const array1 = [1, 2, 3, 4, 10, 8, 67, 34];
-const array2 = [2, 6, 8, 3, 9, 34, 5];
-let result =[];
+// const array1 = [1, 2, 3, 4, 10, 8, 67, 34];
+// const array2 = [2, 6, 8, 9, 34, 5];
+// let result =[];
 
-for ( const idx for array1){
+// for ( const number of array1){
+//     if(array2.includes(number) === true ) {
+//         result.push(number);
+        
+//     }
+//     console.log(result);
+// }
+
     
-    array1.includes(array2);
-    if ( true) {
-        result.push(array2[idx]);
-    } 
+//     // array1.includes(array2);
+//     // if ( true) {
+//     //     result.push(array2[idx]);
+//     // } 
     
-    console.log(result);
-} 
+//     // console.log(result);
+// } 
+
+// function getEvenNumbers(start, end) {
+//     // Change code below this line
+//  const result = []
+//  for ( let i = start; i <= end; i +=1){
+//      if (i%2 === 0) {
+//          result.push(i);
+//          console.log(result);
+//      }
+
+//  } 
+//      // Change code above this line
+//    }
+//    getEvenNumbers(2, 11);
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8];
+// const value = 8;
+// let mark = false;
+// for ( const idx of array){
+    
+//     if( idx === value){
+//         mark = true;
+        
+//     }
+    
+// }
+// console.log(mark);
+
+// const add = function(...args){
+// // console.log(args)
+// let total = 0;
+// for ( const arg of args){
+// total += arg;
+// }
+// console.log('Total=', total);
+// return total;
+
+// }
+
+// add(1, 2, 3);
+// add(4, 3, 2, 1, 7, 12);
   
