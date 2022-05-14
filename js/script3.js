@@ -337,24 +337,172 @@
     //   };
     //   bookShelf.getBooks();
 
-    const bookShelf = {
-        books: ["The last kingdom", "Haze", "The guardian of dreams"],
-        updateBook(oldName, newName) {
-          // Change code below this line
-          let str = 0;
-      for( const book of this.books){
-          if( book === oldName ){
-              console.log(book);
-            //  str = this.books.indexOf(book);
-            //  console.log(str);
-            console.log(this.books.splice(this.books.indexOf(book),1,newName));
-            console.log(this.books);
-          }
-      }
+    // const bookShelf = {
+    //     books: ["The last kingdom", "Haze", "The guardian of dreams"],
+    //     updateBook(oldName, newName) {
+    //       // Change code below this line
+    //       let str = 0;
+    //   for( const book of this.books){
+    //       if( book === oldName ){
+    //           console.log(book);
+    //         //  str = this.books.indexOf(book);
+    //         //  console.log(str);
+    //         console.log(this.books.splice(this.books.indexOf(book),1,newName));
+    //         console.log(this.books);
+    //       }
+    //   }
       
       
       
-          // Change code above this line
-        },
-      };
-     bookShelf.updateBook("Haze", "Dungeon chronicles");
+    //       // Change code above this line
+    //     },
+    //   };
+    //  bookShelf.updateBook("Haze", "Dungeon chronicles");
+
+//     const indices = [];
+// const array = ['a', 'b', 'a', 'c', 'a', 'd'];
+// const element = 'a';
+// let idx = array.indexOf(element);
+// while (idx != -1) {
+//   indices.push(idx);
+//   idx = array.indexOf(element, idx + 1);
+// }
+
+// console.log(indices);
+
+// const a = [
+//     { x: 1},
+//     { y: 2},
+//     { z: 3},
+// ];
+// const b = [...a];
+// a[0].x=1000;
+// console.log(a);
+// console.log(b);
+
+// const book = {
+//         title: "The Last Kingdom",
+//         author: "Bernard Cornwell",
+//         genres: ["historical prose", "adventure"],
+//         rating: 8.38,
+//       };
+// const { title, author: writer, genres, rating} = book; 
+
+//       console.log(writer);
+//       console.log(title);
+
+// const atTheOldToad = {
+//     potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//     removePotion(potionName) {
+//       // Change code below this line
+  
+//   for(const potion of this.potions){
+//     if(potion === potionName){
+//       this.potions.splice(this.potions.indexOf(potion),1)
+//     }
+//   }
+  
+//       // Change code above this line
+//     },
+//   };
+//   atTheOldToad.removePotion('Dragon breath');
+
+
+// const autors = {
+//   kivi: 3,
+//   poly: 5,
+//   sasha: 8,
+//   oscar:6,
+// };
+// const entries = Object.entries(autors);
+
+// for ( const [ name, raiting]  of entries){
+//   // const name = entrie[0];
+//   // const raiting = entrie[1];
+//   // const [ name, raiting] = entrie;
+//   console.log(name, raiting);
+// }
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     const arrPotion = [];
+//     for ( const potion of this.potions){
+//       arrPotion.push(potion);
+//     }
+//     return arrPotion;
+//   },
+//   addPotion(newPotion) {
+//     for( const potion of this.potions){
+//     if (potion.name === newPotion.name) {
+//       return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//     }
+//   }
+
+//     this.potions.push(newPotion);
+//     return newPotion;
+//   },
+//   removePotion(potionName) {
+//     // const potionIndex = this.potions.indexOf(potionName);
+
+//     // if (potionIndex === -1) {
+//     //   return `Potion ${potionName} is not in inventory!`;
+//     // }
+
+//     // this.potions.splice(potionIndex, 1);
+
+//     for( let i = 0; i < this.potions.length; i+=1){
+//     // console.log(this.potions[i]);
+//       if(potionName === this.potions[i].name){
+//         console.log('Yes', potionName);
+//         this.potions.splice(i,1);
+//         return this.potions;
+//       } 
+
+//     }
+//     return `Potion ${potionName} is not in inventory!`;
+//   },
+//   countTotalPrice(){
+//     const {potions} = this;
+// let total = 0;
+// for(const {price} of potions){
+//   total += price;
+// }
+// return total;
+//   },
+//   updatePotionName(oldName, newName) {
+//     console.table(this.potions);
+//     // for ( let i = 0; i < this.potions.length; i += 1){
+//     //   if(oldName === this.potions[i].name){
+//     //     console.log(this.potions[i]);
+//     //     this.potions[i].name = newName;
+//     //     console.table(this.potions);
+//     //     return this.potions;
+//     //   }
+//     // }
+//   //   console.log(this.potions);
+
+//     for( const potion of this.potions){
+//       if( potion.name === oldName ){
+
+//         potion.name = newName;
+//         console.table(this.potions);
+//       }   
+//   }
+//   return `Potion ${oldName} is not in inventory!`;
+//   },
+//   // Change code above this line
+// };
+
+// // console.log(atTheOldToad.addPotion({ name: "Power potion", price: 270 }));
+// // console.log(atTheOldToad.getPotions());
+// // console.log(atTheOldToad.removePotion( "Stone skin"));
+//     console.log(atTheOldToad.updatePotionName("Speed potion", "Polymorth"));
+// // console.log(atTheOldToad.countTotalPrice());
+  
+  
